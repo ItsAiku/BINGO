@@ -98,48 +98,30 @@ class bingo:
         numbrid_O.remove(O4)
         O5 = random.choice(numbrid_O)
         numbrid_O.remove(O5)
+        
+        # Valjastab Kasvavas jarjekorras.
+        print("-------------------")
+        b= [B1,B2,B3,B4,B5]
+        b.sort()
+        print(b)
+        print("-------------------")
+        I= [I1,I2,I3,I4,I5]
+        I.sort()
+        print(I)
+        print("-------------------")
+        N= [N1,N2,N3,N4,N5]
+        N.sort()
+        print(N)
+        print("------------------")
+        G= [G1,G2,G3,G4,G5]
+        G.sort()
+        print(G)
+        print("-----------------")
+        O= [O1,O2,O3,O4,O5]
+        O.sort()
+        print(O)
+        print("------------------")
 
-
-        print("--B--")
-
-        print(B1)
-        print(B2)
-        print(B3)
-        print(B4)
-        print(B5)
-
-        print("--I--")
-
-        print(I1)
-        print(I2)
-        print(I3)
-        print(I4)
-        print(I5)
-
-        print("--N--")
-
-        print(N1)
-        print(N2)
-        print(N3)
-        print(N4)
-        print(N5)
-
-        print("--G--")
-
-        print(G1)
-        print(G2)
-        print(G3)
-        print(G4)
-        print(G5)
-
-        print("--O--")
-
-        print(O1)
-        print(O2)
-        print(O3)
-        print(O4)
-        print(O5)
-        print("--------")
 
 
 loogika=bingo()
