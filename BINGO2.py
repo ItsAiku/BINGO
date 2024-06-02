@@ -145,19 +145,19 @@ class Bingo(QMainWindow):
             if self.rows[key].issubset(drawn_numbers):
                 self.show_winner("Rida")
                 return
-        
-        for key in self.cols:
-            if self.cols[key].issubset(drawn_numbers):
-                self.show_winner("Veerg")
-                return
+        #Voidab Ainult Ridadega
+        #for key in self.cols:
+        #    if self.cols[key].issubset(drawn_numbers):
+        #        self.show_winner("Veerg")
+        #        return
 
-        if self.diag1.issubset(drawn_numbers):
-            self.show_winner("Diagonaal 1")
-            return
+        #if self.diag1.issubset(drawn_numbers):
+        #    self.show_winner("Diagonaal 1")
+        #    return
         
-        if self.diag2.issubset(drawn_numbers):
-            self.show_winner("Diagonaal 2")
-            return
+        #if self.diag2.issubset(drawn_numbers):
+        #    self.show_winner("Diagonaal 2")
+        #    return
 
     def show_winner(self, win_type):
         QMessageBox.information(self, "Võit", f"Sa võitsid! ({win_type})")
